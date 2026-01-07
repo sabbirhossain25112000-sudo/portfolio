@@ -78,7 +78,9 @@ nav .menu a{
 }
 #banner{
     /* border:1px solid red; */
-    margin:47px 38px 0 230px;
+    margin:47px 38px 0 230px; 
+    
+    
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -256,3 +258,68 @@ footer .footer-container{
     color:#757575;
 
 }
+@media (max-width: 576px) {
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #banner {
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+
+  #banner .banner-content h1 {
+    font-size: 42px;
+  }
+
+  #banner .banner-content h2 {
+    font-size: 28px;
+  }
+
+  #banner .banner-image img {
+    max-width: 100%;
+  }
+
+  #about .about-container,
+  #skills .skills-container,
+  #resume .resume-container,
+  footer .footer-container {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  #about .about-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #skills .skill-box {
+    flex-direction: column;
+  }
+
+  #resume .resume-container {
+    flex-direction: column;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  footer form input[type="text"],
+  footer form textarea {
+    width: 100%;
+  }
+}
+.btn:hover {
+  background-color: #e65c00;
+}
+
